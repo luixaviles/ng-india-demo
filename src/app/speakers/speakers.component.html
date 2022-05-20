@@ -1,6 +1,6 @@
 <div class="container">
   <corp-card
-    *ngFor="let speaker of speakers"
+    *ngFor="let speaker of speakers$ | async"
     [speaker]="speaker"
     (editSpeaker)="onEditSpeaker($event)"
   >
