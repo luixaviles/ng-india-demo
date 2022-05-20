@@ -1,11 +1,11 @@
-export interface User {
+export interface Speaker {
   id: number;
   fullName: string;
   role: string;
   avatar?: string;
 }
 
-export interface UserDetail {
+export interface SpeakerDetail {
   id: number,
   fullName: string;
   role: string,

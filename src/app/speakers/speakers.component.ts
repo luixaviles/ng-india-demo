@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { User } from '../web-components/model';
-import '../web-components/corp-user'; // web component
+import { Speaker } from '../web-components/model';
+import '../web-components/corp-card'; // web component
 
 @Component({
   selector: 'corp-speakers',
@@ -15,7 +15,7 @@ export class SpeakersComponent{
   //   avatar: 'https://luixaviles.com/images/avatar@2x.png',
   // };
 
-  users: User[] = [
+  speakers: Speaker[] = [
     {
       id: 0,
       fullName: 'Luis Aviles',
@@ -28,9 +28,12 @@ export class SpeakersComponent{
       role: 'UX Designer',
     },
     { id: 2, fullName: 'Maria Gomez', role: 'Data Scientist' },
+    { id: 2, fullName: 'Maria Gomez', role: 'Data Scientist' },
+    { id: 2, fullName: 'Maria Gomez', role: 'Data Scientist' },
+    { id: 2, fullName: 'Maria Gomez', role: 'Data Scientist' },
   ];
 
-  onEditUser(event: Event) {
+  onEditSpeaker(event: Event) {
     console.log('editUser');
   }
 }
