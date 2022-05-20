@@ -1,0 +1,9 @@
+<div class="container">
+    <corp-user
+      *ngFor="let user of users"
+      [user]="user"
+      (edit-user)="onEditUser($event)"
+    >
+    </corp-user>
+  </div>
+  
